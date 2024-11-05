@@ -8,20 +8,15 @@ In mathematics, a matrix is a __rectangular array of numbers, symbols, or expres
 
 ## 2. Hash Functions, Binary Tree, O(n)
 
-Computational Complexity (O(n)) refers to the amount of resources, typically time or memory, that an algorithm requires to complete as a function of the size of its input. It is commonly expressed using Big O notation, which provides an upper bound on the algorithm's growth rate as input size increases, allowing us to evaluate its efficiency.
+__Computational Complexity O(n)__ refers to the amount of resources, typically time or memory, that an algorithm requires to complete as a function of the size of its input. It is commonly expressed using Big O notation, which provides an upper bound on the algorithm's growth rate as input size increases, allowing us to evaluate its efficiency.
 
-Consider a simple algorithm that sums all elements in a list of 𝑛 numbers:
-In this function:
+- O(1) – Stała złożoność, np. dostęp do elementu tablicy po indeksie.
+- O(n) – Liniowa złożoność, np. jednokrotne przejście przez tablicę.
+- O(n2) – Kwadratowa złożoność, np. dwie zagnieżdżone pętle for.
+- O(logn) – Logarytmiczna złożoność, np. algorytmy dzielące przestrzeń wyszukiwania na pół (binary search).
+- O(nlogn) – Liniowo-logarytmiczna złożoność, np. efektywne algorytmy sortujące jak merge sort.
 
-The loop runs once for each element in the list, resulting in operations. Therefore, the time complexity of this algorithm is O(n), meaning it grows linearly with the input size. For comparison, a nested loop (like in bubble sort) would have time complexity O(n^2), as it performs n×n operations, growing quadratically with input size.
 
-A binary tree is a data structure in which each node has a maximum of two children: left and right. This tree allows you to store data in a hierarchical form, which is useful for searching, sorting and organizing data.
-
-Time complexity (O):
-- Insertion, search, deletion: O(log n) for a balanced tree (e.g. AVL or red-black tree).
-- O(n) for unbalanced trees (where all elements are in one line to form a list).
-- 
-Usage examples: Binary trees are commonly used to implement structures such as BST trees (binary search trees), which efficiently store structured data.
 
 ## 3. Relational Algebra, DB Basics
 
