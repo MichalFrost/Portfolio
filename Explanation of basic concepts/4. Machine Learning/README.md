@@ -1,7 +1,8 @@
 ## 25/11/2024 - start of Understanding Data Engineering
-Machine Learning - obszar sztucznej inteligencji poświęcony algorytmom, które poprawiają się automatycznie poprzez doświadczenie.
+Data Engineer - is the person who ingest and store data, set up databases, build data pipelines and has a strong software skills.
+Data Scientist - is the person who exploit data, access databases, use pipeline outputs and has a strong analytical skills.
 
-## 25/11/2024 - start f Understanding Machine Learning
+## 25/11/2024 - start of Understanding Machine Learning
 
 ## 25/11/2024 - MLOps Concepts
 
