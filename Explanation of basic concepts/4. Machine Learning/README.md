@@ -4,10 +4,15 @@ Data Scientist - is the person who exploit data, access databases, use pipeline 
 
 Data Engineer - is the person who ingest and store data, set up databases, build data pipelines and has a strong software skills.
 
-ETL framework for sedigning data pipelines:
+ETL framework for designing data pipelines:
 - Extract data
 - Transform extracted data
 - Load transformed data to another database
+
+Data Structures:
+- Structured Data - easy to search and organize, difined types, grouped, about 20% of data is organized.
+- Semi-structured Data - different observations have different sizes (like one id has 2 favourites artists and another one has 5 of them).
+- Unstructured Data - usually text, sound, pictures or video.
 
 ## 25/11/2024 - start of Understanding Machine Learning
 
