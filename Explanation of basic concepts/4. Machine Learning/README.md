@@ -14,6 +14,12 @@ Data Structures:
 - Semi-structured Data - different observations have different sizes (like one id has 2 favourites artists and another one has 5 of them).
 - Unstructured Data - usually text, sound, pictures or video.
 
+What about this?
+- Data Lakes - stores all raw data, difficult to analyze, cost-effective, relatively HUGE, real-time analytics.
+- Data Warehouses - store only specific data, optimized for data anlysis, relatively small
+- Databases - general term to defined as organized data stored.
+- Data Catalog - it helps to understand data lakes, support with data usage, data sources, how often the data is updated, by whom. Enrusers reproducibility. 
+
 ## 25/11/2024 - start of Understanding Machine Learning
 
 ## 25/11/2024 - MLOps Concepts
