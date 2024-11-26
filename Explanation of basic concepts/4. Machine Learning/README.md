@@ -20,6 +20,10 @@ What about this?
 - Databases - general term to defined as organized data stored.
 - Data Catalog - it helps to understand data lakes, support with data usage, data sources, how often the data is updated, by whom. Enrusers reproducibility. 
 
+Scheduling Data:
+- Batches - group records at intervals, often cheaper
+- Streams - send individual records right away
+
 ## 25/11/2024 - start of Understanding Machine Learning
 
 ## 25/11/2024 - MLOps Concepts
