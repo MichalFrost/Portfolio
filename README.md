@@ -1,4 +1,12 @@
 # Data Scientist Portfolio
+## End-to-end projects:
+
+### 1. COVID-19 Vaccination Project:
+
+The project is intended to initiate tasks that are the responsibility of Data Scientists. In the case of this project, I went all the way from searching and importing basic data, through their analysis, cleaning and unification, as well as modification, to using the information in analysis and visualization in PowerBI.
+
+![COVID Visualisation](https://user-images.githubusercontent.com/103076071/217058672-bcec1e97-b9d1-4afb-8111-2f8c872d02ca.PNG)
+
 
 ## Explanation of basic concepts:
 
@@ -7,12 +15,3 @@ First project based on China's GDP from 1960 to 2014 dataset. This data helps me
 * Mean absolute error: 6.816782828315826e-10
 * Mean squared error: 7.75095678657296e-19
 * r2_score: 1.0
-
-
-## End-to-end projects:
-
-### 1. COVID-19 Vaccination Project:
-
-The project is intended to initiate tasks that are the responsibility of Data Scientists. In the case of this project, I went all the way from searching and importing basic data, through their analysis, cleaning and unification, as well as modification, to using the information in analysis and visualization in PowerBI.
-
-![COVID Visualisation](https://user-images.githubusercontent.com/103076071/217058672-bcec1e97-b9d1-4afb-8111-2f8c872d02ca.PNG)
