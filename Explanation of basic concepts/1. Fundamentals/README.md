@@ -61,7 +61,7 @@ Główne korzyści z sharding:
  - Skalowalność: Dzięki podzieleniu danych na mniejsze fragmenty, system może rosnąć, dodając kolejne serwery lub węzły.
  - Wydajność: Równoległe przetwarzanie zapytań na różnych shardach zwiększa szybkość operacji.
  - Dostępność: W przypadku awarii jednego z shardów, dane mogą być nadal dostępne na innych węzłach.
- - 
+
 Wyzwania związane z shardingiem to m.in. utrzymanie integralności danych między shardami, złożoność zapytań, które mogą wymagać dostępu do wielu shardów jednocześnie, oraz zarządzanie równomiernym rozkładem danych między shardami.
 
 ## 10. OLAP
