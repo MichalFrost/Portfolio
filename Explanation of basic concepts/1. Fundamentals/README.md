@@ -18,15 +18,50 @@ __Computational Complexity O(n)__ refers to the amount of resources, typically t
 
 ## 3. Relational Algebra, DB Basics
 
-__Relational Algebra__ – Matematyczny formalizm do manipulacji danymi w relacyjnych bazach danych (SQL opiera się na jej zasadach).
-__DB Basics__ – Podstawy baz danych, w tym tabele, klucze, indeksy, normalizacja i zapytania SQL.
+Relational Algebra i DB Basics to podstawowe pojęcia związane z bazami danych, które pomagają w organizowaniu, manipulowaniu i zarządzaniu danymi w systemach zarządzania bazami danych (DBMS). Oto krótkie wyjaśnienie tych terminów:
+
+__Relational Algebra__ (Algebra Relacyjna)
+Algebra relacyjna to zbiór operacji, które są używane do przetwarzania i manipulowania danymi w relacyjnych bazach danych. Jest to formalny język zapytań, który stanowi podstawę dla bardziej zaawansowanych systemów zapytań, takich jak SQL. W algebrze relacyjnej operacje są wykonywane na relacjach (tabelach), które składają się z wierszy (krotek) i kolumn (atrybutów). Operacje algebry relacyjnej zwracają nowe relacje jako wynik.
+
+Niektóre podstawowe operacje w algebrze relacyjnej to:
+
+ - Selekcja (Selection): Wybieranie wierszy z tabeli, które spełniają określony warunek (np. σ).
+ - Projekcja (Projection): Wybieranie tylko niektórych kolumn z tabeli (np. π).
+ - Słączenie (Join): Łączenie dwóch tabel na podstawie wspólnego atrybutu (np. ⨝).
+ - Unia (Union): Łączenie danych z dwóch tabel, eliminując duplikaty (np. ∪).
+ - Różnica (Difference): Zwracanie różnicy między dwiema tabelami (np. -).
+ - Iloczyn kartezjański (Cartesian Product): Łączenie wszystkich możliwych par wierszy z dwóch tabel (np. ×).
+Przykład: Załóżmy, że mamy dwie tabele – Pracownicy i Działy. Możemy użyć operacji z algebry relacyjnej, aby połączyć je na podstawie wspólnego atrybutu, np. ID Działu, co daje nam jedną tabelę z pełnymi informacjami.
+
+__DB Basics__ (Podstawy baz danych)
+Podstawy baz danych (DB Basics) obejmują fundamentalne pojęcia i zasady, które pozwalają zrozumieć, jak działają bazy danych i jak są one używane do przechowywania, organizowania i przetwarzania danych. Kluczowe pojęcia to:
+ - Tabela: Podstawowa jednostka przechowywania danych w relacyjnej bazie danych, składająca się z wierszy i kolumn.
+ - Wiersz (Tuple): Pojedynczy rekord w tabeli. Wiersze zawierają konkretne dane.
+ - Kolumna (Attribute): Kategoria danych w tabeli, np. "Imię", "Nazwisko", "Data urodzenia".
+ - Klucz główny (Primary Key): Unikalny identyfikator dla każdego wiersza w tabeli, np. "ID pracownika".
+ - Klucz obcy (Foreign Key): Atrybut w jednej tabeli, który wskazuje na klucz główny w innej tabeli, służy do tworzenia powiązań między tabelami.
+ - Relacja: Struktura tabeli w bazie danych, która wiąże ze sobą różne dane.
+
+SQL (Structured Query Language): Język zapytań używany do zarządzania bazami danych. SQL jest używany do definiowania, manipulowania i pobierania danych z baz danych.
+Kluczowe operacje w bazach danych:
+ - Dodawanie danych (INSERT): Wstawianie nowych wierszy do tabeli.
+ - Usuwanie danych (DELETE): Usuwanie wierszy z tabeli.
+ - Aktualizowanie danych (UPDATE): Zmiana wartości w tabeli.
+ - Wybieranie danych (SELECT): Pobieranie danych z tabeli.
+Bazy danych mogą być używane w różnych typach aplikacji, od prostych aplikacji webowych po duże systemy zarządzania informacjami w organizacjach. W zależności od zastosowania bazy danych mogą być zarządzane za pomocą różnych systemów, np. MySQL, PostgreSQL, Oracle, SQL Server.
 
 ## 4. Inner, Outer, Cross, Theta Join
 
- - Inner Join – Zwraca tylko pasujące rekordy między dwiema tabelami.
- - Outer Join – Może być LEFT, RIGHT, FULL – zwraca pasujące rekordy oraz te, które nie mają odpowiednika.
- - Cross Join – Tworzy iloczyn kartezjański dwóch tabel (łączy każdy wiersz pierwszej tabeli z każdym wierszem drugiej).
- - Theta Join – Warunkowe łączenie tabel na podstawie dowolnego warunku (niekoniecznie klucza).
+__Inner Join__ zwraca tylko te wiersze, które mają dopasowanie w obu tabelach. Oznacza to, że tylko wiersze, które spełniają warunek łączenia (np. na podstawie wspólnego klucza), będą pojawiały się w wynikowej tabeli.
+
+__Outer Join__ zwraca wszystkie wiersze z jednej tabeli oraz dopasowane wiersze z drugiej tabeli. Jeśli w drugiej tabeli nie ma dopasowania, wiersze z pierwszej tabeli pojawią się w wynikach, ale z wartościami NULL w kolumnach drugiej tabeli.
+ - Left Outer Join (LEFT JOIN): Zwraca wszystkie wiersze z lewej tabeli i dopasowane wiersze z prawej tabeli. Jeśli nie ma dopasowania w prawej tabeli, pojawią się wartości NULL.
+ - Right Outer Join (RIGHT JOIN): Zwraca wszystkie wiersze z prawej tabeli i dopasowane wiersze z lewej tabeli. Jeśli nie ma dopasowania w lewej tabeli, pojawią się wartości NULL.
+ - Full Outer Join (FULL JOIN): Zwraca wszystkie wiersze z obu tabel, w tym te, które nie mają dopasowania. W przypadku braku dopasowania w jednej z tabel, w kolumnach tej tabeli pojawią się wartości NULL.
+
+__Cross Join__ (znane także jako iloczyn kartezjański) zwraca wszystkie możliwe pary wierszy z dwóch tabel. Jest to operacja, która łączy każdy wiersz z jednej tabeli z każdym wierszem z drugiej tabeli, tworząc wynik, który zawiera wszystkie możliwe kombinacje.
+
+__Theta Join__ to ogólny typ łączenia, w którym warunek łączenia jest określony za pomocą dowolnego operatora porównania, np. =, >, <, <=, >=, <>. Jest to bardziej ogólny przypadek joinów, który pozwala na zastosowanie bardziej złożonych warunków niż tylko równość.
 
 ## 5. CAP Theorem
 
@@ -39,12 +74,46 @@ Nie da się osiągnąć wszystkich trzech jednocześnie.
 
 ## 6. Tabular Data
 
-Dane tabelaryczne – zorganizowane w wiersze i kolumny (np. pliki CSV, SQL, arkusze kalkulacyjne).
+Tabular data (dane tabelaryczne) to dane, które są zorganizowane w formie tabeli, składającej się z wierszy i kolumn. Tego typu dane są powszechnie używane w bazach danych, arkuszach kalkulacyjnych (np. Excel), plikach CSV, a także w analizach danych i uczeniu maszynowym. Struktura tabeli pozwala na łatwe przechowywanie, organizowanie, analizowanie oraz manipulowanie danymi.
+
+Kluczowe cechy danych tabelarycznych:
+ - Wiersze (Rows): Każdy wiersz w tabeli reprezentuje pojedynczy rekord (np. dane dotyczące jednego klienta, zamówienia, pracownika itp.).
+ - Kolumny (Columns): Kolumny reprezentują różne atrybuty lub cechy danych. Na przykład w tabeli dotyczącej pracowników kolumny mogą zawierać takie atrybuty jak ID, Imię, Nazwisko, Wiek, Dział, itp.
+ - Komórki (Cells): Każda komórka w tabeli zawiera wartość, która jest wynikiem przecięcia wiersza i kolumny. Na przykład komórka może zawierać imię pracownika, jego wiek, datę zamówienia itp.
+
+Zastosowania danych tabelarycznych:
+ - Bazy danych: Relacyjne bazy danych przechowują dane tabelaryczne w tabelach. Tabele te są połączone ze sobą za pomocą kluczy, co pozwala na złożone zapytania i analizy.
+ - Analiza danych: Dane tabelaryczne są popularne w analizie danych, szczególnie w narzędziach takich jak Python (pandas), R, Excel, czy SQL.
+ - Uczenie maszynowe: W uczeniu maszynowym dane tabelaryczne są jedną z najczęściej stosowanych form danych wejściowych, szczególnie w zadaniach klasyfikacji, regresji i analizy danych.
+
+Zalety danych tabelarycznych:
+ - Strukturalność: Dzięki uporządkowanej strukturze (wiersze i kolumny) dane są łatwe do zrozumienia i przetwarzania.
+ - Prostota: Tabele są łatwe w edycji, przechowywaniu i udostępnianiu.
+ - Integracja: Tabele mogą być łatwo eksportowane i importowane do różnych narzędzi i systemów (np. CSV, Excel, bazy danych SQL).
 
 ## 7. Entropy
 
-W teorii informacji – miara niepewności w zbiorze danych (np. w drzewach decyzyjnych).
-W statystyce – określa niejednorodność danych w podziale klasyfikacyjnym.
+W kontekście analizy danych entropia (często nazywana entropią informacji) jest miarą niepewności, niejednoznaczności lub "chaosu" w zbiorze danych. Mówiąc prościej, entropia mierzy, jak bardzo rozproszone są dane w zbiorze — im wyższa entropia, tym mniej przewidywalne i bardziej zróżnicowane są dane. Jest to pojęcie szeroko stosowane w różnych technikach analizy danych, w tym w uczeniu maszynowym, drzewach decyzyjnych, algorytmach klasyfikacyjnych i kompresji danych.
+
+__Entropia w kontekście analizy danych__
+W analizie danych entropia jest wykorzystywana do mierzenia niepewności, jaką niosą dane w odniesieniu do ich klasyfikacji, segmentacji lub grupowania. Jeśli mamy zbiór danych, który jest w dużej mierze jednorodny (np. w większości przypadków ten sam typ danych, np. "tak" lub "nie"), entropia będzie niska. Natomiast w zbiorze, który zawiera różnorodne dane (np. wiele różnych klas lub wyników), entropia będzie wysoka.
+
+__Entropia w kontekście drzew decyzyjnych__
+Jednym z najczęstszych zastosowań entropii w analizie danych jest jej wykorzystanie w drzewach decyzyjnych (np. w algorytmie ID3, C4.5, CART). W tym przypadku entropia służy do wyboru najlepszego atrybutu, który najlepiej dzieli dane na mniejsze grupy, zmniejszając niepewność (lub entropię) w każdej z tych grup.
+
+Wysoka entropia oznacza, że dane są bardzo zróżnicowane i nie można ich łatwo podzielić na jednorodne grupy.
+Niska entropia oznacza, że dane są jednorodne i łatwo je podzielić.
+Algorytm ID3, na przykład, stara się minimalizować entropię (redukcję niepewności) podczas tworzenia drzewa decyzyjnego. Działa to w sposób następujący:
+
+Oblicza entropię całego zbioru danych, na przykład pod względem klas (np. "tak" lub "nie").
+Następnie analizuje różne atrybuty (np. wiek, płeć, dochód) i sprawdza, jak podział na te atrybuty wpływa na zmniejszenie entropii w wyniku podziału danych.
+Atrybut, który najbardziej zmniejsza entropię (czyli najlepiej "segreguje" dane), zostaje wybrany jako węzeł w drzewie decyzyjnym.
+
+__Zastosowania entropii w analizie danych__:
+ - Drzewa decyzyjne: Jak wspomniano, entropia jest wykorzystywana do podziału danych w algorytmach drzewa decyzyjnego (np. ID3, C4.5).
+ - Klastry: W algorytmach grupujących, takich jak k-means, entropia może być używana do oceny, jak dobrze dane są podzielone na grupy.
+ - Wybór cech: Entropia może być wykorzystywana do oceny znaczenia poszczególnych cech w zbiorze danych, pomagając w wyborze najistotniejszych cech do analizy.
+
 
 ## 8. Data Frames & Series
 
