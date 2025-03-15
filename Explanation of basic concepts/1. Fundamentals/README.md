@@ -117,8 +117,13 @@ __Zastosowania entropii w analizie danych__:
 
 ## 8. Data Frames & Series
 
- - Data Frame – dwuwymiarowa struktura danych (podobna do tabeli), np. w Pandas (Python).
- - Series – jednowymiarowa struktura (kolumna tabeli).
+DataFrame i Series to dwie podstawowe struktury danych w bibliotece pandas w Pythonie, które są wykorzystywane do przechowywania i manipulowania danymi w formie tabelarycznej. Pandas jest jedną z najpopularniejszych bibliotek do analizy danych, a DataFrame i Series są jej fundamentami.
+
+__Series__
+Series to jednowymiarowa struktura danych, która przypomina listę lub tablicę. Jest to podobne do wektora w matematyce lub szeregów czasowych w analizie danych. Każdy element w serii jest przypisany do indeksu, co umożliwia łatwe dostępu do danych.
+
+__DataFrame__
+DataFrame to dwuwymiarowa struktura danych, która przypomina tabelę, z wierszami i kolumnami, podobnie jak tabela w bazie danych lub arkusz kalkulacyjny. Każda kolumna może zawierać dane różnych typów (np. liczby, teksty, daty). Można także przypisać indeksy zarówno do wierszy, jak i do kolumn.
 
 ## 9. Sharding
 
