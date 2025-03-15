@@ -13,6 +13,4 @@ This portfolio serves as both a learning space and a demonstration of my experti
 
 ### End-to-end projects:
 1. COVID-19 Vaccination Project
-
-### Explanation of basic concepts:
-1. Non-linear Regression
+2. Web Pipeline with weather and air pollution data
