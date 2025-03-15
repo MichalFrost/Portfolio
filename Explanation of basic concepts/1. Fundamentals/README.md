@@ -58,10 +58,10 @@ Sharding to technika używana w bazach danych i systemach rozproszonych, polegaj
 W praktyce, sharding pozwala rozdzielić obciążenie między wiele serwerów, co ułatwia obsługę dużych zbiorów danych i umożliwia równoczesne przetwarzanie wielu zapytań w różnych miejscach. Shardowanie jest powszechnie wykorzystywane w bazach danych NoSQL, takich jak MongoDB, oraz w niektórych tradycyjnych bazach danych SQL.
 
 Główne korzyści z sharding:
-
-Skalowalność: Dzięki podzieleniu danych na mniejsze fragmenty, system może rosnąć, dodając kolejne serwery lub węzły.
-Wydajność: Równoległe przetwarzanie zapytań na różnych shardach zwiększa szybkość operacji.
-Dostępność: W przypadku awarii jednego z shardów, dane mogą być nadal dostępne na innych węzłach.
+ - Skalowalność: Dzięki podzieleniu danych na mniejsze fragmenty, system może rosnąć, dodając kolejne serwery lub węzły.
+ - Wydajność: Równoległe przetwarzanie zapytań na różnych shardach zwiększa szybkość operacji.
+ - Dostępność: W przypadku awarii jednego z shardów, dane mogą być nadal dostępne na innych węzłach.
+ - 
 Wyzwania związane z shardingiem to m.in. utrzymanie integralności danych między shardami, złożoność zapytań, które mogą wymagać dostępu do wielu shardów jednocześnie, oraz zarządzanie równomiernym rozkładem danych między shardami.
 
 ## 10. OLAP
