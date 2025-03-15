@@ -51,9 +51,18 @@ W statystyce – określa niejednorodność danych w podziale klasyfikacyjnym.
  - Data Frame – dwuwymiarowa struktura danych (podobna do tabeli), np. w Pandas (Python).
  - Series – jednowymiarowa struktura (kolumna tabeli).
 
-## 9. Shading
+## 9. Sharding
 
-W grafice komputerowej – technika cieniowania i symulowania światła na obiektach.
+Sharding to technika używana w bazach danych i systemach rozproszonych, polegająca na podzieleniu danych na mniejsze, łatwiejsze do zarządzania części, zwane "shardami". Każdy shard to fragment danych, który może być przechowywany na osobnym serwerze lub w odrębnym węźle w systemie rozproszonym. Celem shardingu jest zwiększenie wydajności, skalowalności oraz dostępności systemu.
+
+W praktyce, sharding pozwala rozdzielić obciążenie między wiele serwerów, co ułatwia obsługę dużych zbiorów danych i umożliwia równoczesne przetwarzanie wielu zapytań w różnych miejscach. Shardowanie jest powszechnie wykorzystywane w bazach danych NoSQL, takich jak MongoDB, oraz w niektórych tradycyjnych bazach danych SQL.
+
+Główne korzyści z sharding:
+
+Skalowalność: Dzięki podzieleniu danych na mniejsze fragmenty, system może rosnąć, dodając kolejne serwery lub węzły.
+Wydajność: Równoległe przetwarzanie zapytań na różnych shardach zwiększa szybkość operacji.
+Dostępność: W przypadku awarii jednego z shardów, dane mogą być nadal dostępne na innych węzłach.
+Wyzwania związane z shardingiem to m.in. utrzymanie integralności danych między shardami, złożoność zapytań, które mogą wymagać dostępu do wielu shardów jednocześnie, oraz zarządzanie równomiernym rozkładem danych między shardami.
 
 ## 10. OLAP
 
